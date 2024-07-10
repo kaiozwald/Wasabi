@@ -15,18 +15,20 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final bool showToolBar;
   final double? elevation;
   final Color? bgColor;
+  final FontWeight? fontWeight;
 
   const CustomAppBar(
       {super.key,
       this.title,
-      this.fontSize = fontR14,
+      this.fontSize = fontR20,
       this.fontColor = black,
       this.showBackArrow = false,
-      this.centerTitle = true,
+      this.centerTitle = false,
       this.actions,
-      this.showToolBar = false,
+      this.showToolBar = true,
       this.elevation,
-      this.bgColor});
+      this.bgColor,
+      this.fontWeight = FontWeight.normal});
 
   @override
   Widget build(BuildContext context) {
@@ -40,11 +42,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         fontColor: fontColor != null
             ? (AppTheme.isDarkMode() ? Colors.white : black)
             : Colors.white,
-        fontWeight: FontWeight.bold,
+        fontWeight: fontWeight ?? FontWeight.normal,
       ),
       leadingWidth: 24,
       automaticallyImplyLeading: showBackArrow ?? false,
-      centerTitle: true,
+      centerTitle: centerTitle,
       actions: actions,
     );
   }

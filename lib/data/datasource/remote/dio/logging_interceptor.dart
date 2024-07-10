@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-import '../../../../core/logger.dart';
+import 'logger.dart';
 
 class LoggingInterceptor extends InterceptorsWrapper {
   int maxCharactersPerLine = 200;

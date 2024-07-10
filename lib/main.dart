@@ -2,7 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:wasab/core/app_theme/theme.dart';
-import 'package:wasab/presentation/auth/views/login_screen/welcome_screen.dart';
+import 'package:wasab/presentation/auth/views/sign_up_screens/welcome_screen.dart';
 import 'core/constants/constants.dart';
 import 'injection.dart';
 

@@ -1,6 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:wasab/core/app_colors/app_colors.dart';
+import 'package:wasab/core/navigator/navigator.dart';
+import 'package:wasab/presentation/home_screen/views/main_app_layout/main_app_layout.dart';
 import 'package:wasab/widgets/custom_app_bar/custom_app_bar.dart';
 import 'package:wasab/widgets/custom_asset_image/custom_asset_image.dart';
 import 'package:wasab/widgets/custom_button_nav_bar/custom_button_nav_bar.dart';
@@ -70,7 +72,10 @@ class _PhotoScreenState extends State<PhotoScreen> {
             height: 24,
           ),
         ]),
-        bottomNavigationBar:
-            CustomButtonNavBar(title: 'Next'.tr(), ontap: () {}));
+        bottomNavigationBar: CustomButtonNavBar(
+            title: 'Next'.tr(),
+            ontap: () {
+              NavigatorHandler.push(const MainAppLayout());
+            }));
   }
 }

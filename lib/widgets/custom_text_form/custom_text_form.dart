@@ -27,8 +27,8 @@ class CustomTextFormField extends StatelessWidget {
       alignment: Alignment.center,
       decoration: BoxDecoration(
         color: AppTheme.isDarkMode() ? inputBgDark : inputBg,
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: mainColor),
+        borderRadius: BorderRadius.circular(100),
+        border: Border.all(color: greyColor),
       ),
       child: TextFormField(
         controller: controller,

@@ -1,12 +1,4 @@
 class SocialMediaHelper {
-  // openWhatsApp(String phoneNumber) {
-  //   return launchUrl(
-  //     Uri.parse(
-  //       'whatsapp://send?phone=$phoneNumber', //put your number here
-  //     ),
-  //   );
-  // }
-
   // void launchPhoneCall(String phoneNumber) async {
   //   final url = 'tel:$phoneNumber';
 
