@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:wasab/core/app_colors/app_colors.dart';
-import 'package:wasab/presentation/home_screen/viewsmodel/cubit/layout_cubit.dart';
-import 'package:wasab/presentation/home_screen/viewsmodel/cubit/layout_state.dart';
+import 'package:wasab/presentation/home_screen/main_app_layout/viewsmodel/cubit/layout_cubit.dart';
+import 'package:wasab/presentation/home_screen/main_app_layout/viewsmodel/cubit/layout_state.dart';
 import 'package:wasab/widgets/custom_svg/custom_svg_icon.dart';
 
 class MainAppLayout extends StatefulWidget {

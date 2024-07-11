@@ -2,8 +2,9 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:wasab/core/app_colors/app_colors.dart';
 import 'package:wasab/core/navigator/navigator.dart';
-import 'package:wasab/presentation/home_screen/views/bottom_navigation_screens/chat_screen/new_messages.dart';
-import 'package:wasab/presentation/home_screen/widgets/chat_message.dart';
+import 'package:wasab/presentation/home_screen/bottom_navigation_screens/chat_screen/view/new_messages.dart';
+import 'package:wasab/presentation/home_screen/bottom_navigation_screens/chat_screen/widgets/chat_message.dart';
+import 'package:wasab/widgets/custom_row_tile/row_tile.dart';
 import 'package:wasab/widgets/custom_app_bar/custom_app_bar.dart';
 import 'package:wasab/widgets/custom_svg/custom_svg_icon.dart';
 
@@ -19,7 +20,6 @@ class _ContactScreenState extends State<ContactScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
-        showBackArrow: true,
         bgColor: white,
         title: 'Contacts'.tr(),
         elevation: 1,

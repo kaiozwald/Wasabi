@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:wasab/core/app_theme/theme.dart';
+import 'package:wasab/multiproviders.dart';
 import 'package:wasab/presentation/auth/views/sign_up_screens/welcome_screen.dart';
 import 'core/constants/constants.dart';
 import 'injection.dart';
@@ -11,10 +12,8 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
   await init();
-  runApp(
-      // GenerateMultiProviders(
-      // child:
-      EasyLocalization(
+  runApp(GenerateMultiBlocProviders(
+      child: EasyLocalization(
     supportedLocales: supportedLanguages,
     startLocale: supportedLanguages[1],
     saveLocale: true,
@@ -23,9 +22,7 @@ void main() async {
     fallbackLocale: supportedLanguages[1],
     path: 'assets/languages',
     child: const MyApp(),
-  )
-      // )
-      );
+  )));
 }
 
 class MyApp extends StatefulWidget {
